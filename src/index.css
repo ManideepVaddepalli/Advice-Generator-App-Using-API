@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.total-content {
+  font-family: "Manrope", sans-serif;
+  padding: 7.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+}
+.card-container {
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+  background-color: hsl(217, 19%, 24%);
+  color: white;
+}
+.card-text-content {
+  padding: 10px 0px 50px 0px;
+}
+.card-text-content > h5 {
+  padding: 2em;
+  letter-spacing: 0.25em;
+  color: hsl(150, 100%, 66%);
+}
+.card-text-content > p {
+  font-size: 20px;
+  padding: 0em 1.5em 0.5em;
+  color: hsl(193, 38%, 86%);
+}
+.speration-img {
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-image: url("../src/images/pattern-divider-mobile.svg");
+  width: calc(100% - 60px);
+  height: 16px;
+  margin: 15px 30px 10px 30px;
+}
+
+.button-container {
+  position: relative;
+  left: calc(50% - 30px);
+  top: -30px;
+}
+.button-container > button {
+  pointer-events: all;
+  border: 0px;
+  border-radius: 50%;
+  height: 60px;
+  aspect-ratio: 1/1;
+  background-color: hsl(150, 100%, 66%);
+  transition: 0.4s;
+}
+.button-container > button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 40px 5px hsl(150, 100%, 66%);
+}
+@media (min-width: 1200px) {
+  .speration-img {
+    background-image: url("../src/images/pattern-divider-desktop.svg");
+  }
+}
